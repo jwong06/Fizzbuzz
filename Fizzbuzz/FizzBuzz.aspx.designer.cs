@@ -7,10 +7,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace FizzBuzz {
+namespace Fizzbuzz {
     
     
-    public partial class FizzBuzz {
+    public partial class Fizzbuzz {
         
         /// <summary>
         /// form1 control.

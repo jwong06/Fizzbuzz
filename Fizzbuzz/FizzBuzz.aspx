@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="FizzBuzz.aspx.cs" Inherits="FizzBuzz.FizzBuzz" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Fizzbuzz.aspx.cs" Inherits="Fizzbuzz.Fizzbuzz" %>
 
 <!DOCTYPE html>
 
@@ -18,12 +18,12 @@
                     <tr>
                         <td align="Right">Please enter an number:</td>
                         <td width="75%">
-                            <asp:TextBox ID="txtNum" Width="75%" runat="server"></asp:TextBox>
+                            <asp:TextBox ID="txtNum" Width="75%" runat="server" OnTextChanged="mobile_TextChanged"></asp:TextBox>
                         </td>
                     </tr>
                     <tr>
                         <td align="center" colspan="2">
-                            <asp:Button ID="btnSubmit" runat="server" Width="100px" Text="Submit" Align="Center" OnClick="BtnSubmit_Click" />
+                            <asp:Button ID="btnSubmit" runat="server" Width="100px" Text="Submit" Align="Center" OnClick="btnSubmit_Click" />
                         </td>
                     </tr>
                     <tr>
@@ -34,7 +34,7 @@
                 </table>
             </div>
         </div>
+
     </form>
 </body>
 </html>
-
