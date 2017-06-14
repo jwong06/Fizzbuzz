@@ -18,7 +18,7 @@
                     <tr>
                         <td align="Right">Please enter an number:</td>
                         <td width="75%">
-                            <asp:TextBox ID="txtNum" Width="75%" runat="server" OnTextChanged="mobile_TextChanged"></asp:TextBox>
+                            <asp:TextBox ID="txtNum" Width="75%" runat="server"></asp:TextBox>
                         </td>
                     </tr>
                     <tr>

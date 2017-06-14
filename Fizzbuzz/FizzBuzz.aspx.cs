@@ -16,21 +16,20 @@ namespace Fizzbuzz
 
         protected void btnSubmit_Click(object sender, EventArgs e)
         {
-            int num = Convert.ToInt32(this.txtNum.Text);
-
             if(txtNum.Text == "")
             {
                 lblFizzBuzz.Text = "Please enter a number into the textbox";
             }
             else
             {
+                int num = Convert.ToInt32(this.txtNum.Text);
                 if (num % 3 == 0)
                 {
-                    lblFizzBuzz.Text("Fizz");
+                    lblFizzBuzz.Text = "Fizz";
                 }
                 if (num % 5 == 0)
                 {
-                    lblFizzBuzz.Text("Buzz");
+                    lblFizzBuzz.Text = "Buzz";
                 }
                 else if (num % 3 == 0 && num % 5 == 0)
                 {
