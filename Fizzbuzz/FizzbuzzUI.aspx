@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Fizzbuzz.aspx.cs" Inherits="Fizzbuzz.Fizzbuzz" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="FizzbuzzUI.aspx.cs" Inherits="Fizzbuzz.Fizzbuzz" %>
 
 <!DOCTYPE html>
 

@@ -16,7 +16,7 @@ namespace Fizzbuzz
 
         protected void btnSubmit_Click(object sender, EventArgs e)
         {
-            if(txtNum.Text == "")
+            if (txtNum.Text == "")
             {
                 lblFizzBuzz.Text = "Please enter a number into the textbox";
             }
@@ -25,8 +25,9 @@ namespace Fizzbuzz
                 int num = Convert.ToInt32(this.txtNum.Text);
                 bool fizz = num % 3 == 0;
                 bool buzz = num % 5 == 0;
+                bool neither = (num % 3 != 0) && (num % 5 != 0);
 
-                if (fizz && buzz)
+                if (fizz && buzz || neither)
                 {
                     lblFizzBuzz.Text = "";
                 }
@@ -42,3 +43,4 @@ namespace Fizzbuzz
         }
     }
 }
+
