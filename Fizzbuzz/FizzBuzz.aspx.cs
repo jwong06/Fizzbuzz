@@ -23,17 +23,20 @@ namespace Fizzbuzz
             else
             {
                 int num = Convert.ToInt32(this.txtNum.Text);
-                if (num % 3 == 0)
+                bool fizz = num % 3 == 0;
+                bool buzz = num % 5 == 0;
+
+                if (fizz && buzz)
+                {
+                    lblFizzBuzz.Text = "";
+                }
+                else if (fizz)
                 {
                     lblFizzBuzz.Text = "Fizz";
                 }
-                if (num % 5 == 0)
+                else if (buzz)
                 {
                     lblFizzBuzz.Text = "Buzz";
-                }
-                else if (num % 3 == 0 && num % 5 == 0)
-                {
-                    lblFizzBuzz.Text = "";
                 }
             }
         }
