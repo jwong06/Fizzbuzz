@@ -16,12 +16,11 @@ namespace Fizzbuzz
 
         protected void btnSubmit_Click(object sender, EventArgs e)
         {
-            if (txtNum.Text == "")
+            if (Page.IsValid)
             {
-                lblFizzBuzz.Text = "Please enter a number into the textbox";
-            }
-            else
-            {
+                validNum.Text = "";
+                validTxt.Text = "";
+
                 int num = Convert.ToInt32(this.txtNum.Text);
                 bool fizz = num % 3 == 0;
                 bool buzz = num % 5 == 0;

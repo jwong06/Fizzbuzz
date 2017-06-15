@@ -31,6 +31,24 @@ namespace Fizzbuzz {
         protected global::System.Web.UI.WebControls.TextBox txtNum;
         
         /// <summary>
+        /// validNum control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CompareValidator validNum;
+        
+        /// <summary>
+        /// validTxt control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator validTxt;
+        
+        /// <summary>
         /// btnSubmit control.
         /// </summary>
         /// <remarks>

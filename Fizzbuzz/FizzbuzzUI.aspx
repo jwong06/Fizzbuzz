@@ -18,7 +18,11 @@
                     <tr>
                         <td align="Right">Please enter an number:</td>
                         <td width="75%">
-                            <asp:TextBox ID="txtNum" Width="75%" runat="server"></asp:TextBox>
+                            <asp:TextBox ID="txtNum" Width="75%" runat="server" KeyPress="txtNum_KeyPress"></asp:TextBox>
+                            <br />
+                            <asp:CompareValidator ID="validNum" runat="server" Operator="DataTypeCheck" Type="Integer" ControlToValidate="txtNum" ErrorMessage="Value must be a whole number" />
+                            <asp:RequiredFieldValidator ID="validTxt" runat="server" ErrorMessage="Please enter a number" ControlToValidate="txtNum"></asp:RequiredFieldValidator>
+
                         </td>
                     </tr>
                     <tr>
